@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - The Cyber Pioneer</title>
+      <!-- favicon -->
+      <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+      <!-- meta description  -->
+      <meta name="description" content="The Cyber Pioneer is a community dedicated to educating, inspiring, and uniting passionate students to develop ethical cybersecurity skills. Join us today!">
+  
+      <!-- meta keyword -->
+      <meta name="keywords" content="cybersecurity, ethical hacking, education, community, students, training, cybersecurity skills, digital threats, tc pioneer , the cyber pioneer, cyber pioneer, cyber pioneer community, cyber pioneer club, cyber pioneer group, cyber pioneer team,">
+  
+      <!-- conical tag -->
+      <link rel="canonical" href="https://www.tcpioneer.org">
+  
+      <!-- social medias integration -->
+      <meta property="og:title" content="The Cyber Pioneer - Empowering Future Cybersecurity Leaders">
+      <meta property="og:description" content="Join a community of cybersecurity enthusiasts to learn and grow your skills in ethical hacking and more.">
+      <meta property="og:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+      <meta property="og:url" content="https://www.tcpioneer.org">
+      <meta property="og:type" content="website">
+      <meta property="og:site_name" content="The Cyber Pioneer">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <img class="h-12" src="../images/nav-logo.png" alt="Cyber Pioneer Logo">
+
+                <!-- Desktop Menu -->
+                <div class="hidden sm:flex space-x-4">
+
+                    <a href="../index.html"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="about.html"
+                        class="text-grey-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">About</a>
+                    <a href="feq.html"
+                        class="text-blue-600 hover:text-blue-600 px-3 py-2 rounded-md font-medium ">FAQ</a>
+                    <a href="joinus.html"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Join Us</a>
+                    <a href="Disclaimer.html"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Disclaimer</a>
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Contact</a>
+                </div>
+                <!-- Mobile Menu Button - Always Visible -->
+                <button id="mobile-menu-button"
+                    class="sm:hidden inline-flex items-center p-2 rounded-md text-gray-700 hover:text-blue-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path class="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path class="close-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+            </div>
+            <!-- Mobile Menu Panel -->
+            
+            <div id="mobile-menu" class="sm:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white rounded-md shadow-lg">
+                    <a href="../index.html"
+                        class="text-blue-600 hover:text-blue-800 block px-3 py-2 rounded-md font-medium">Home</a>
+                    <a href="about.html"
+                        class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">About</a>
+                    <a href="feq.html"
+                        class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">FAQ</a>
+                    <a href="joinus.html"
+                        class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">Join Us</a>
+                    <a href="Disclaimer.html"
+                        class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">Disclaimer</a>
+                    <a href="contact.html"
+                        class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-900">Frequently Asked Questions</h1>
+                <p class="mt-4 text-xl text-gray-600">Find answers to common questions about The Cyber Pioneer</p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="space-y-4" data-aos="fade-up">
+                <!-- What is The Cyber Pioneer? -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">What is The Cyber Pioneer?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> The Cyber Pioneer is a community of
+                            cybersecurity enthusiasts dedicated to learning and sharing knowledge about cyber security
+                            and development.</p>
+                    </div>
+                </div>
+
+                <!-- How can I join? -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">How can I join The Cyber Pioneer?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> You can join The Cyber Pioneer by visiting our
+                            Join Us page and filling out the form.</p>
+                    </div>
+                </div>
+
+                <!-- Activities -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">What activities does The Cyber Pioneer
+                                organize?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> We organize various activities including
+                            workshops, webinars, and hackathons to promote cyber security awareness and skills.</p>
+                    </div>
+                </div>
+
+                <!-- Who can join -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Who can join the community?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> Anyone with an interest in cybersecurity,
+                            ethical hacking, or related fields can join. We welcome both beginners who want to learn and
+                            skilled individuals eager to contribute.</p>
+                    </div>
+                </div>
+
+                <!-- Membership fee -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Is there any membership fee?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> No, membership in The Cyber Pioneer is free.
+                            We believe in making knowledge accessible to everyone.</p>
+                    </div>
+                </div>
+
+                <!-- Can beginners join? -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Can beginners join, or is prior experience
+                                required?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> Absolutely! Beginners are welcome. We provide
+                            resources and guidance to help you get started on your cyber security journey.</p>
+                    </div>
+                </div>
+
+                <!-- Illegal activities -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Does the group condone hacking or illegal
+                                activities?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> No, we strictly promote ethical practices.
+                            Members involved in illegal activities will bear full responsibility and will not receive
+                            support from the group.</p>
+                    </div>
+                </div>
+
+                <!-- Inviting others -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Can I invite others to join?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> Yes, we encourage you to share our mission and
+                            invite other passionate individuals to become part of the The Cyber Pioneer.</p>
+                    </div>
+                </div>
+
+                <!-- Getting help -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">How can I get help if I face a problem?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> Our experienced members and mentors are here
+                            to help. You can reach out during sessions, events, or through our communication channels.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Violating rules -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">What happens if I violate the community's
+                                rules or principles?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> We have a strict code of conduct. Any
+                            violations, especially unethical behavior or illegal activities, will lead to removal from
+                            the community.</p>
+                    </div>
+                </div>
+
+                <!-- Affiliations -->
+                <div class="border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                    <button class="w-full text-left px-6 py-4 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-gray-900">Is the group affiliated with any
+                                institutions or companies?</h3>
+                            <svg class="w-5 h-5 transform transition-transform duration-200" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-4">
+                        <p class="text-gray-600"><strong>Answer:</strong> Currently, we operate as an independent
+                            community, but we are open to partnerships that align with our mission and values.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <div class="flex flex-col justify-center items-center space-y-4">
+                <div class="text-center">
+                    <p class="text-sm">© 2025 The Cyber Pioneer || All rights reserved</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-sm">
+                        Developed by
+                        <span class="text-blue-400 hover:text-blue-300 transition-colors duration-300">Anand
+                            Keshari</span>
+                        &
+                        <span class="text-blue-400 hover:text-blue-300 transition-colors duration-300">Shashank</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "The Cyber Pioneer",
+          "url": "https://www.tcpioneer.org",
+          "description": "A community dedicated to cybersecurity education and skill development."
+        }
+        </script>
+</body>
+
+</html>

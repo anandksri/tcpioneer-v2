@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Add these scrollbar hiding styles at the top */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll; /* Ensure page is scrollable even with hidden scrollbar */
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.shadow-hover {
+    transition: all 0.3s ease;
+}
+
+.shadow-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Background Grid Pattern */
+.bg-grid-pattern {
+    background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+                      linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* Gradient Text Animation */
+.animate-gradient {
+    background: linear-gradient(270deg, #2563eb, #3b82f6, #60a5fa);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Image Hover Effects */
+img {
+    transition: all 0.5s ease;
+}
+
+/* Counter Animation */
+.counter {
+    transition: all 0.3s ease;
+}
+
+/* FAQ Animations */
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-content.active {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+/* FAQ Button Hover */
+.faq-button:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* Social Media Icons */
+.social-icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: #4B5563;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.social-icon-link:hover {
+    color: #2563EB;
+    background-color: #F3F4F6;
+    transform: translateY(-2px);
+}
+
+.social-icon-link span {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Add Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* If not already present, add these styles */
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.15;
+    }
+}
+
+.blur-3xl {
+    --tw-blur: blur(64px);
+    filter: var(--tw-blur);
+}
+
+/* Hero Section Styles */
+.hero-section {
+    @apply relative rounded-3xl bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white p-16 mb-16 overflow-hidden;
+}
+
+/* Animated Grid Pattern */
+.animated-grid {
+    @apply absolute inset-0 opacity-10 animate-pulse;
+    background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+                      linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* Decorative Orbs */
+.decorative-orb {
+    @apply absolute w-64 h-64 rounded-full opacity-20 blur-3xl;
+}
+
+.decorative-orb-1 {
+    @apply -right-20 -top-20 bg-blue-500;
+}
+
+.decorative-orb-2 {
+    @apply -left-20 -bottom-20 bg-blue-300;
+}
+
+/* Hero Content */
+.hero-content {
+    @apply relative z-10 text-center max-w-3xl mx-auto;
+}
+
+.hero-title {
+    @apply text-6xl font-bold mb-6;
+}
+
+.hero-description {
+    @apply text-xl text-blue-100 leading-relaxed;
+}
+
+/* Intro Section Styles */
+.intro-section {
+    @apply bg-white rounded-lg shadow-lg p-8 mb-12;
+    background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.intro-title {
+    @apply text-2xl font-bold text-gray-900 mb-4 text-center;
+}
+
+.intro-description {
+    @apply text-gray-600 leading-relaxed text-center max-w-3xl mx-auto;
+}
+
+/* Add smooth transition to body content */
+.content-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content-wrapper.transitioning {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Add transition to links */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Desktop Menu Items */
+.desktop-menu a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.desktop-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.desktop-menu a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-button {
+    display: none;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 45;
+}
+
+@media (max-width: 682px) {
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .menu-overlay.active {
+        display: block;
+    }
+}
+
+/* Simplified Mobile Menu Styles */
+#mobile-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-menu {
+    margin-top: 0.5rem;
+    background: white;
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 640px) {
+    #mobile-menu-button {
+        display: none;
+    }
+}
+
