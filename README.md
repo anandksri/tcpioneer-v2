@@ -1,12 +1,12 @@
-# The Cyber Pioneer v2
+# TC Pioneer v2
 
-This repository contains the second version of The Cyber Pioneer website.
+This repository contains the second version of the TC Pioneer website.
 
 It is a historical version of the project and is not the main repository for current development.
 
 ## Project
 
-The Cyber Pioneer is a cybersecurity community and learning platform focused on practical security knowledge, resources, and community learning.
+TC Pioneer is a cybersecurity community and learning platform focused on practical security knowledge, resources, and community learning.
 
 ## Version status
 
